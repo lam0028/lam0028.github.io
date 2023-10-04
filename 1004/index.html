@@ -1,17 +1,61 @@
+<html>
+
 <head>
-    <title>Grace Lam October 4th Lecture Codes</title>
+    <link rel="icon" href="img/cs.png" /> <!--rel and href are properties (like data types in C#)-->
+
+    <title>MIS 3033 Grace Lam October 4th</title>
+
+    <style>
+        .divstyle1 
+        {
+            width: 100px;
+            height: 50px;
+            border-style: dashed;
+            border-width: 3px;
+            border-color: darkseagreen;
+            border-radius: 7px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-top:20px;
+            padding-left: 10px;
+        }
+    </style> <!--defining a div style that can be applied to multiple divs-->
 </head>
 
 <body>
+    <span style="background-color:darkorchid;">
+        <span style="color:red;font-size:20px;">M</span>
+        <span style="color:green;">I</span>
+        <span style="color:blue;">S</span> 3033
+    </span> <!--span puts everything on the same line (continuous, won't go to the next line, will occupy the whole line)--> <!--width and height don't work on span-->
+    <span style="background-color:aquamarine;">MIS 3033</span>
+    <span style="background-color:crimson;">MIS 3033</span>
 
-    <div style="border-style:solid;border-color:blueviolet;border-width:5px;height:200px;width:300px;border-radius:20px;">
-    
-    This is a div
-    
-    </div>
+
+    <div class="divstyle1" style="background-color:darksalmon;">MIS 3033</div> <!--div will go to the next line--> <!--even if there aren't any styles applied to a div, there is still a border; default style is null--> <!--can also use % for border radius-->
+    <div class="divstyle1" style="background-color:gold;">MIS 3033</div>
+    <div class="divstyle1" style="background-color:darkcyan;">MIS 3033</div> <!--when applying a style class, don't include the dot (.) from before, that is jsut a syntax-->
+
+    <img src="img/MIS3033logo.png" style="width:300px;border-radius:50%;"/> <!--for images usually only specify width OR height, not both-->
 
     <div>
-        <img src="img/cs.png"style="width:200px;"/>
+        <button>Submit</button>
+
+        <br /> <!--puts the next text box on the next line-->
+
+        <label for="name">Name:</label> <!--same thing as writing the title of the text box without the label tags (like line 20)-->
+        <!--'for' property specifies what box the title is related to-->
+        <input id="name" type="text" /> <!--id is like variable name in C#-->
+
+        <br />
+
+        Grade: <input type="text" />
+
+        <br />
+
+        <input type="text" />
     </div>
 
 </body>
+
+</html>
