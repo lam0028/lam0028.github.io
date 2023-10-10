@@ -1,15 +1,66 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="site.css"/>
 
     <title>MIS 3033 October 9 Grace Lam</title>
+    <style>
+        #div2
+        {
+            background-color:burlywood;
+        }
+        #div3
+        {
+            background-color:aquamarine;
+        }
+        #div4 
+        {
+            background-color: palevioletred;
+        }
+        #div5 
+        {
+            background-color: darkblue;
+        }
+        #div6 
+        {
+            background-color: lime;
+        }
+    </style> <!--* applies to everything in your html and is a CSS style selector--> 
+    <!--div in the style tag will apply the styles to all the divs; this one will take priority over other styles that are specified in a div-->
+    <!--# will specify styles for a div with a certain id-->
 
 
 </head>
 
 <body>
+    <span class="titlestyle">box sizing</span>
+    <div style="color:red;padding-left:20px;box-sizing:content-box;" class="divstyle1 titlestyle">div1</div>
+    <div style="padding-left:20px;box-sizing:border-box;" class="divstyle1 titlestyle">div2</div>
+    <br /> <!--if you want to control size of box when using with padding need to use box-sizing; if you want exactly the size no matter how much margin you add use border-box; if you want box size to increase automatically when you add padding use content-box-->
+    <span class="titlestyle">CSS selectors</span> <!--nearest style will have priority (style color red in the first div), but if there are two styles the later one takes priority-->
+    
+    <div id="main" style="position:relative;background-color:chocolate;height:400px;">
+        <div style="position:sticky;top:3px;" id="div1">div1</div> <!--id is like data type and div1 is like variable name-->
+        <div id="div2">div2</div>
+        <div id="div3">div3</div>
+        <div style="position:absolute;right:0;top:0;" id="div4">div4</div>
+        
+        <div style="position:relative;left:10px;top:10px;" id="div5">div5</div>
+        <div id="div6">div6</div>
 
-    <div style="width:200px;height:100px;background-color:aqua;margin-left:50px;padding-top:20px;padding-left:30px;">
+        <div id="menu" style="position:fixed;right:0;top:100px;width:70px;height:60px;background-color:darkcyan;">
+            Option 1
+            <br />
+            Option 2
+            <br />
+            Option 3
+        </div>
+    </div>
+
+    
+
+
+     <div style="width:200px;height:100px;background-color:aqua;margin-left:50px;padding-top:20px;padding-left:30px;">
         div1
     </div> <!--padding happens within a div gives space between text and edges of a div-->
     <div style="width:100px;height:300px;background-color:crimson;margin-top:30px;">
