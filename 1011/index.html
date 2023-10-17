@@ -1,93 +1,135 @@
 <html>
 
-<head> 
-    
-    
+<head>
+
+
     <title> MIS 3033 Oct 11 Grace Lam</title>
     <style>
-        #maindiv
-        {
-            background-color:aliceblue;
-            width:800px;
-            height:500px;
-
-            display:flex;
-            flex-direction:row;
-            justify-content:flex-end;
-            align-items:flex-end;
-            margin-top:50px;
-
-        }
-        .d1
-        {
-            width:100px;
-            height:120px;
-            margin-left:10px;
-            margin-top:10px;
-            background-color:aqua;
+        #maindiv {
+            background-color: aliceblue;
+            width: 800px;
+            height: 500px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: flex-end;
+            margin-top: 50px;
         }
 
-        #webdiv
-        {
-            background-color:antiquewhite;
-            width:1000px;
-            margin-left:auto;
-            margin-right:auto;
+        .d1 {
+            width: 100px;
+            height: 120px;
+            margin-left: 10px;
+            margin-top: 10px;
+            background-color: aqua;
         }
 
-        #footerdiv
-        {
-            background-color:aliceblue;
-            height:50px;
-
-            display:flex;
-            flex-direction:row;
-            justify-content:center;
-            align-items:center;
-
-            border-radius:5px;
-            color:darkgray;
+        #webdiv {
+            background-color: antiquewhite;
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        #bodydiv
-        {
-            background-color:chartreuse;
-            display:flex;
-            flex-direction:row;
+        #footerdiv {
+            background-color: aliceblue;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            color: darkgray;
         }
 
-        #leftdiv
-        {
-            background-color:crimson;
+        #bodydiv {
+            background-color: chartreuse;
+            display: flex;
+            flex-direction: row;
         }
 
-        #rightdiv
-        {
-            background-color:white;
-            display:flex;
-            flex-direction:column;
-            
-            border-style:solid;
-            border-radius:10px;
-            border-width:2px;
-            border-color:darkgray;
-
-            align-items:center;
+        #leftdiv {
+            background-color: crimson;
+            display: flex;
+            flex-direction: column;
         }
 
+        #rightdiv {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            border-style: solid;
+            border-radius: 10px;
+            border-width: 2px;
+            border-color: darkgray;
+            align-items: center;
+        }
 
+        #updiv {
+            border-style: solid;
+            border-width: 2px;
+            border-color: darkgray;
+            border-radius: 10px;
+        }
+
+        #downdiv {
+            border-style: solid;
+            border-width: 2px;
+            border-color: darkgray;
+            border-radius: 10px;
+        }
+
+        #title1 {
+            font-size: 20px;
+            font-weight: bold;
+            background-color: lightskyblue;
+            border-radius: 5px;
+        }
     </style> <!--dot is syntax to create a style class-->
-    
-    </head>
-<body>
 
-    <div id="webdiv" >
+</head>
+<body> <!--justify-content: along the flex direction, align-items: along cross direction-->
+
+    <div id="webdiv">
         web page
+        <div id="headerdiv" style="display:flex;flex-direction:row;justify-content:center;">
+            
+            <div style="font-size:30px;color:dodgerblue;text-transform:uppercase;font-weight:bold;">
+                i love programming! 
+            </div>
+
+            <div>
+                <img src="a.svg" style="height:100px;"/>
+            </div>
+        </div>
 
         <div id="bodydiv">
 
             <div id="leftdiv">
-                left
+
+                <div style="width:480px; background-color:cyan;" id="updiv">
+                    <span id="title1">What I already learned:</span>
+
+                    <ul>
+                        <li>C#</li>
+                        <li>C# Entity Framework</li>
+                        <li>Database Sqlite</li>
+                        <li>HTML & CSS</li>
+                    </ul>
+                </div>
+
+                <div style="width:480px; background-color:coral;" id="downdiv">
+                    <span id="title2">
+                        What I am going to learn next:
+                    </span>
+                    <ol>
+                        <li>JavaScript</li>
+                        <li>Bootstrap</li>
+                        <li>ASP.NET MVC</li>
+                        <li>Web REST API</li>
+                    </ol>
+                </div>
+
             </div>
 
             <div id="rightdiv">
