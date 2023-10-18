@@ -25,10 +25,111 @@
         }
     </style>
 
+    <script>
+        "use strict";
+        let k; // global variable since not contained in any scope ({}), so can be used anywhere inside your web page
+        k = 10; 
+        {
+            let i; // let is defining a local variable; can only be used within these {}
+            var j; // var used to define a global variable 
+            j = 10;
+            // in javascript, data type of j and i is determined by the right hand side
+            j = 36.6; // a variable doesn't have a fixed data type, depends on the right hand side
+            console.log(j);
+
+            // 3 ways to use string in javascript
+            j = "string";
+            j = 'string';
+            j = `string`; // this one is most commonly used
+            i = 120.6;
+            j = `the weight is ${i} ${i}`;
+            console.log(j);
+
+            // one way to define a function
+            function f1(p1, p2) // p1 and p2 are local variables here
+            {
+                return p1 + p2;
+            }
+            j = f1(2, 3);
+            console.log(j);
+
+            // arrow function
+            let f2 = (p1, p2) => { return p1 * p2 };
+            // need to give the function a name first before using it
+            j = f2(3, 2);
+            console.log(j);
+
+            let f3 = (p1) => { return p1 * p1 * p1 }; // if there's only 1 parameter the () and {} aren't necessary
+            j = f3(3);
+            console.log(j);
+
+            let f4 = p1 => p1 * p1 * p1;
+            j = f4(2);
+            console.log(j);
+
+            // defining objects
+            let stu = { name: "grace", age: 20, grade: 90 };
+            console.log(stu.grade);
+
+            // array
+            let arr1;
+            arr1 = [20, 19, 22, 23];
+
+            for (let ii = 0; i < arr1.length; i++)
+            {
+                console.log(arr1[i]);
+            }
+
+            // map function will create a new array; this one will produce an array with 4 elements of 10
+            let  arr2=arr1.map((item) =>
+            {
+                return {age:10}
+            });
+            console.log(arr2);
+
+        }
+
+        {
+            let i;
+            console.log(j);
+        }
+    </script>
+
+    <style>
+        .style1
+        {
+            width:100px;
+            height:100px;
+            border-style:solid;
+            border-width:1px;
+        }
+        .style2 
+        {
+            width: 200px;
+            height: 200px;
+            border-style: dashed;
+            border-width: 5px;
+        }
+    </style>
 
 </head>
 
 <body>
+
+    <input type="text" style="width:100px;" id="cat"/>
+    <button id="btn">Submit</button>
+    <div id="d1"></div>
+
+    <script>
+        "use strict";
+
+        {
+            document.querySelector("#d1").classList.add("style2");
+            document.querySelector("#cat").value = "Grace Lam";
+        }
+    </script>
+
+
     <div id="main">
         <div id="left" class="divstyle"> div1</div>
 
