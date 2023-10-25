@@ -1,0 +1,83 @@
+<html>
+
+<head>
+
+    <title>Exam 2 Practice</title>
+
+    <style>
+        #maindiv {
+            margin-left: auto;
+            margin-right: auto;
+            width: 1000px;
+            background-color: chartreuse;
+        }
+
+        #header {
+            width: 1000px;
+            background-color: antiquewhite;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            align-items: center;
+        }
+
+        #body1 {
+            display: flex;
+            flex-direction: row;
+            background-color: aliceblue;
+        }
+        #rightdiv
+        {
+            width:300px;
+            background-color:cornflowerblue;
+            height:300px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="maindiv">
+        main
+        <div id="header">
+            <div style="height:50px;margin-right:5px;">Hi, Grace Lam</div>
+            <div><img src="head2.png" style="border-radius:50px;height:40px;" /></div>
+            <div><button>Logout</button></div>
+        </div>
+        <div id="body1">
+            <div style="width:300px;height:300px;">
+                <div>
+                <img src="book.jpg" style="width:200px;" />
+                </div>
+                <div style="font-weight:bold;">C# 10 and .NET 6</div>
+            </div>
+
+            <div style="width:400px;background-color:aliceblue;height:300px;">
+                <span style="font-weight:bold;">$49.99</span>
+                <div style="display:flex;flex-direction:row;">
+                    <label for="quantity">Qty:</label>
+                        <input id="quantity" type="text"/>
+                </div>
+                <div>
+                    <button>Add</button>
+                </div>
+
+            </div>
+            <div id="rightdiv" style="font-weight:bold;">Total cost: $89.98</div>
+        </div>
+        <div id="footer" style="text-align:center;background-color:#073c76;color:white;width:1000px;height:50px;justify-content:center;display:flex;flex-direction:row;align-items:center;">Designed and Developed by Grace Lam</div>
+
+
+    </div>
+
+
+
+
+
+
+</body>
+
+
+</html>
