@@ -2,19 +2,121 @@
 
 <head>
 
-    <title>[EXAM CODE HERE] Grace Lam Exam 2 MIS 3033 </title>
+    <title>[URCR] Grace Lam Exam 2 MIS 3033 </title>
 
+    <style>
+        #maindiv {
+            margin-left: auto;
+            margin-right: auto;
+            width: 800px;
+            /*background-color:cadetblue;*/
+        }
+
+        .bstyle {
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgrey;
+            border-radius: 5px;
+        }
+
+        #header {
+            display: flex;
+            flex-direction: row;/*
+            width: 200px;
+            height: 70px;*/
+            /*background-color: darkkhaki;*/
+        }
+
+
+        #body1 {
+            display: flex;
+            flex-direction: row;
+            height: 80px;
+            align-items: center;
+        }
+
+        .tstyle {
+            text-transform: uppercase;
+            background-color: lightskyblue;
+            border-radius: 5px;
+        }
+
+        #body2
+        {
+            display:flex;
+            flex-direction:row;
+        }
+    </style>
 </head>
 
 <body>
-    <img src="static/head1 (2).png" style="height:100px;"/>
-    <img src="static/head2 (2).png" style="height:100px;"/>
-    <img src="static/linkedin (1).png" style="height:100px;"/>
-    <img src="static/html.svg" style="height:100px;"/>
-    <img src="static/css.svg" style="height:100px;"/>
-    <img src="static/javascript.svg" style="height:100px;"/>
-    <img src="static/sqlite.svg" style="height:100px;"/>
-    <img src="static/logo.svg" style="height:100px;"/>
+
+    <div id="maindiv">
+        <div id="header">
+            <div class="bstyle" style="width:200px;height:70px;display:flex;flex-direction:row;align-items:center;justify-content:center;text-align:center;">MIS 3033 Exam 2 <br /> Grace Lam</div>
+
+            <div class="bstyle" style="width:200px;height:70px;display:flex;flex-direction:row;align-items:center;justify-content:center;"> [URCR]</div>
+        </div>
+
+        <div id="body1" class="bstyle">
+            <div><img src="static/head2 (2).png" style="height:60px;border-radius:50%;" /></div>
+            <div>Grace Lam<br />MIS Student</div>
+            <div><a target="_blank" href="https://www.linkedin.com/"><img src="static/linkedin (1).png" style="height:30px;" /></a></div>
+        </div>
+        <div id="body2">
+            <div id="left">
+                <div id="aboutme" style="width:510px;height:110px;" class="bstyle">
+                    <span class="tstyle">about me:</span>
+                    <div>I am a MIS student. I like programming and I am good at C#. I leaned Entity Framework for Database Manipulations. I know HTML, CSS and I started to learn JavaScript. It is fun. Later I will learn C# .NET MVC Dynamic Web App development and Web API development.</div>
+                </div>
+                <div id="ach" style="width:510px;height:160px;" class="bstyle">
+                    <span class="tstyle">achievements</span>
+
+                    <div style="display:flex;flex-direction:row;justify-content:center;">
+                        <div><img src="static/html.svg" style="height:100px;" /></div>
+                        <div><img src="static/css.svg" style="height:100px;" /></div>
+                        <div><img src="static/javascript.svg" style="height:100px;" /></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="right" class="bstyle" style="width:280px;">
+                <span class="tstyle">recent news:</span>
+                <div>
+                    <ul>
+                        <li>Learned C#</li>
+                        <li>Learned Entity Framework</li>
+                        <li>Learned<img src="static/sqlite.svg" style="height:40px;" /></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="bstyle" style="display:flex;flex-direction:row; align-items:center;justify-content:end;">
+            <div style="height: 60px; font-weight: bold; font-size: 20px; color: grey;display:flex;flex-direction:row;align-items:center;justify-content:end;">
+                Developed by Grace Lam for MIS 3033 Exam 2
+            </div>
+            <div style="display:flex;flex-direction:row; align-items:center;justify-content:end;"><img src="static/logo.svg" style="height:50px;" /></div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!--<img src="static/head1 (2).png" style="height:100px;" />
+    <img src="static/head2 (2).png" style="height:100px;" />
+    <img src="static/linkedin (1).png" style="height:100px;" />
+    <img src="static/html.svg" style="height:100px;" />
+    <img src="static/css.svg" style="height:100px;" />
+    <img src="static/javascript.svg" style="height:100px;" />
+    <img src="static/sqlite.svg" style="height:100px;" />
+    <img src="static/logo.svg" style="height:100px;" />-->
 </body>
 
 
