@@ -123,11 +123,11 @@
                 params = {
                     type: 'pie',
                     data: {
-                        labels: [rj.map(x=>x.name)],
+                        labels: rj.map(x=>x.name),
                         datasets: [
                             {
-                                label: 'Population of cities',
-                                data: [rj.map(x=>x.population)]
+                                label: 'Population of states',
+                                data: rj.map(x=>x.p)
                             }]
                     }
                 };
